@@ -10,7 +10,11 @@ console.log(`Your app is listening a http://localhost:${port}`)
 );
 const Discord = require('discord.js');
 const fs = require('fs');
-const config = require('./config.json');
+const config = {
+  token: process.env.DISCORD_TOKEN,
+  prefix: process.env.PREFIX || '!'
+};
+
 const CatLoggr = require('cat-loggr');
 
 // Functions
