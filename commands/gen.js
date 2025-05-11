@@ -1,7 +1,12 @@
 // Dependencies
 const { MessageEmbed, Message } = require('discord.js');
 const fs = require('fs');
-const config = require('../config.json');
+const config = {
+  color: {
+    red: "#ff0000"
+  }
+};
+
 const CatLoggr = require('cat-loggr');
 
 // Functions
